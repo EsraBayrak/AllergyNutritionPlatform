@@ -1,0 +1,45 @@
+@model AllergyNutritionPlatform.Models.UserAllergy
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>My Allergy Details</h1>
+
+<div>
+    <h4>Allergy Information</h4>
+    <hr />
+    <dl class="row">
+    <dt class="col-sm-2">
+        Allergy
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Allergy.Name)
+    </dd>
+
+    <dt class="col-sm-2">
+        Description
+    </dt>
+    <dd class="col-sm-10">
+        @Model.Allergy.Description
+    </dd>
+
+    <dt class="col-sm-2">
+        Common Foods
+    </dt>
+    <dd class="col-sm-10">
+        @Model.Allergy.CommonFoods
+    </dd>
+
+    <dt class="col-sm-2">
+        Recommendation
+    </dt>
+    <dd class="col-sm-10">
+        @Model.Allergy.Recommendation
+    </dd>
+</dl>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

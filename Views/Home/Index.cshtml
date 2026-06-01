@@ -1,0 +1,66 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center mb-4">
+    <h1 class="display-4">Allergy Nutrition Platform</h1>
+    <p class="lead">
+        A personalized platform that helps users manage allergies, check food products,
+        discover suitable restaurants and save favorite items.
+    </p>
+</div>
+<div class="row mb-4">
+
+    <div class="col-md-3">
+        <div class="card p-3">
+            <h5>📦 Total Products</h5>
+            <h2>@ViewBag.ProductCount</h2>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card p-3">
+            <h5>🍽️ Total Restaurants</h5>
+            <h2>@ViewBag.RestaurantCount</h2>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card p-3">
+            <h5>⚠️ My Allergies</h5>
+            <h2>@ViewBag.TotalAllergies</h2>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card p-3">
+            <h5>❤️ My Favorites</h5>
+            <h2>@ViewBag.FavoriteCount</h2>
+        </div>
+    </div>
+
+</div>
+
+<hr />
+
+<h3 class="mb-3">Platform Features</h3>
+
+<div class="row mb-4">
+    <div class="col-md-6"><div class="card p-3 mb-3">✅ Manage Personal Allergies</div></div>
+    <div class="col-md-6"><div class="card p-3 mb-3">✅ Product Safety Check</div></div>
+    <div class="col-md-6"><div class="card p-3 mb-3">✅ Restaurant Discovery</div></div>
+    <div class="col-md-6"><div class="card p-3 mb-3">✅ Favorite Products</div></div>
+</div>
+
+<h3 class="mb-3">Supported Allergy Categories</h3>
+
+<div class="row">
+    <div class="col-md-3"><div class="card p-3 mb-3">🌾 Gluten</div></div>
+    <div class="col-md-3"><div class="card p-3 mb-3">🥛 Lactose</div></div>
+    <div class="col-md-3"><div class="card p-3 mb-3">🌰 Hazelnut</div></div>
+    <div class="col-md-3"><div class="card p-3 mb-3">🥚 Egg</div></div>
+    <div class="col-md-3"><div class="card p-3 mb-3">🥜 Peanut</div></div>
+    <div class="col-md-3"><div class="card p-3 mb-3">🫘 Soy</div></div>
+    <div class="col-md-3"><div class="card p-3 mb-3">🐟 Seafood</div></div>
+    <div class="col-md-3"><div class="card p-3 mb-3">🐄 Milk</div></div>
+</div>

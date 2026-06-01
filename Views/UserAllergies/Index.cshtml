@@ -1,0 +1,37 @@
+@model IEnumerable<AllergyNutritionPlatform.Models.UserAllergy>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>My Allergies</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.Allergy)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.Allergy.Name)
+            </td>
+            <td>
+              
+@Html.ActionLink("Details", "Details", new { userId = item.UserId, allergyId = item.AllergyId }) |
+@Html.ActionLink("Delete", "Delete", new { userId = item.UserId, allergyId = item.AllergyId })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

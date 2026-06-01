@@ -1,0 +1,83 @@
+@model AllergyNutritionPlatform.Models.Product
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Brand)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Brand)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Category)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Category)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt class="col-sm-2">
+    Status
+</dt>
+<dd class="col-sm-10">
+    @if (Model.IsSafe)
+    {
+        <span>✅ Safe</span>
+    }
+    else
+    {
+        <span>❌ Not Safe</span>
+    }
+</dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
+<hr />
+@if (ViewBag.IsNotSuitable == true)
+{
+    <div class="alert alert-danger">
+        ⚠️ Warning: This product contains allergens that exist in your allergy profile.
+    </div>
+}
+else
+{
+    <div class="alert alert-success">
+        ✅ Safe: This product does not contain allergens from your allergy profile.
+    </div>
+}
+@{
+    var productAllergies = Model?.ProductAllergies;
+}
+
+@if (productAllergies != null)
+{
+    <h4>Contains Allergens</h4>
+
+    <ul>
+        @foreach (var item in productAllergies)
+        {
+            <li>@item.Allergy.Name</li>
+        }
+    </ul>
+}

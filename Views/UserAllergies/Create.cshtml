@@ -1,0 +1,25 @@
+@model AllergyNutritionPlatform.Models.UserAllergy
+
+@{
+    ViewData["Title"] = "Add Allergy";
+}
+
+<h1>Add Allergy</h1>
+
+<form asp-action="Create">
+    <div class="form-group">
+        <label asp-for="AllergyId" class="control-label">Select Allergy</label>
+        <select asp-for="AllergyId" class="form-control" asp-items="ViewBag.AllergyId"></select>
+        <span asp-validation-for="AllergyId" class="text-danger"></span>
+    </div>
+
+    <br />
+
+    <div class="form-group">
+        <input type="submit" value="Add Allergy" class="btn btn-primary" />
+    </div>
+</form>
+
+<br />
+
+<a asp-action="Index">Back to My Allergies</a>
