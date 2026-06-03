@@ -271,13 +271,13 @@ C:\Users\casper\Desktop\AllergyNutritionPlatform\obj\Debug\net9.0\AllergyNutriti
 C:\Users\casper\Desktop\AllergyNutritionPlatform\obj\Debug\net9.0\AllergyNutritionPlatform.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\casper\Desktop\AllergyNutritionPlatform\obj\Debug\net9.0\AllergyNutritionPlatform.RazorAssemblyInfo.cache
 C:\Users\casper\Desktop\AllergyNutritionPlatform\obj\Debug\net9.0\AllergyNutritionPlatform.RazorAssemblyInfo.cs
+C:\Users\casper\Desktop\AllergyNutritionPlatform\obj\Debug\net9.0\AllergyNutritionPlatform.sourcelink.json
 C:\Users\casper\Desktop\AllergyNutritionPlatform\obj\Debug\net9.0\rjimswa.dswa.cache.json
 C:\Users\casper\Desktop\AllergyNutritionPlatform\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 C:\Users\casper\Desktop\AllergyNutritionPlatform\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
 C:\Users\casper\Desktop\AllergyNutritionPlatform\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\casper\Desktop\AllergyNutritionPlatform\obj\Debug\net9.0\scopedcss\bundle\AllergyNutritionPlatform.styles.css
 C:\Users\casper\Desktop\AllergyNutritionPlatform\obj\Debug\net9.0\scopedcss\projectbundle\AllergyNutritionPlatform.bundle.scp.css
-C:\Users\casper\Desktop\AllergyNutritionPlatform\obj\Debug\net9.0\compressed\562vxwpvbm-b9sayid5wm.gz
 C:\Users\casper\Desktop\AllergyNutritionPlatform\obj\Debug\net9.0\compressed\xddfrqlbuj-61n19gt1b8.gz
 C:\Users\casper\Desktop\AllergyNutritionPlatform\obj\Debug\net9.0\compressed\mzkxo2btpr-xtxxf3hu2r.gz
 C:\Users\casper\Desktop\AllergyNutritionPlatform\obj\Debug\net9.0\compressed\aonoot57js-bqjiyaj88i.gz
@@ -351,3 +351,4 @@ C:\Users\casper\Desktop\AllergyNutritionPlatform\obj\Debug\net9.0\refint\Allergy
 C:\Users\casper\Desktop\AllergyNutritionPlatform\obj\Debug\net9.0\AllergyNutritionPlatform.pdb
 C:\Users\casper\Desktop\AllergyNutritionPlatform\obj\Debug\net9.0\AllergyNutritionPlatform.genruntimeconfig.cache
 C:\Users\casper\Desktop\AllergyNutritionPlatform\obj\Debug\net9.0\ref\AllergyNutritionPlatform.dll
+C:\Users\casper\Desktop\AllergyNutritionPlatform\obj\Debug\net9.0\compressed\562vxwpvbm-saq2ekyh3d.gz

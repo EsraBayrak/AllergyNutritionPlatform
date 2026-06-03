@@ -1,0 +1,55 @@
+@model AllergyNutritionPlatform.Models.Recipe
+
+@{
+    ViewData["Title"] = "Edit Recipe";
+}
+
+<h1>Edit Recipe</h1>
+
+<hr />
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Edit">
+
+            <input type="hidden" asp-for="Id" />
+
+            <div class="form-group">
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Category"></label>
+                <input asp-for="Category" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="SuitableFor"></label>
+                <input asp-for="SuitableFor" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Ingredients"></label>
+                <textarea asp-for="Ingredients" class="form-control" rows="4"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Instructions"></label>
+                <textarea asp-for="Instructions" class="form-control" rows="6"></textarea>
+            </div>
+            <div class="form-group">
+    <label asp-for="ImageUrl"></label>
+    <input asp-for="ImageUrl" class="form-control" />
+</div>
+
+            <br />
+
+            <input type="submit" value="Save" class="btn btn-primary" />
+        </form>
+    </div>
+</div>
+
+<br />
+
+<a asp-action="Index">Back to List</a>

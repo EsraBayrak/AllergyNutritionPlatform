@@ -24,6 +24,7 @@ public class ApplicationDbContext : DbContext
     public DbSet<Favorite> Favorites { get; set; }
 
     public DbSet<UserAllergy> UserAllergies { get; set; }
+    public DbSet<Recipe> Recipes { get; set; }
     public DbSet<ProductAllergy> ProductAllergies { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

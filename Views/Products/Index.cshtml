@@ -25,7 +25,7 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<table class="table table-bordered table-striped">
+<table class="table table-hover shadow">
     <thead>
         <tr>
             <th>
@@ -79,22 +79,46 @@ else
 
         bool isNotSafe = productAllergyIds.Any(id => userAllergyIds.Contains(id));
 
-        if (isNotSafe)
-        {
-            <span>❌ Not Safe</span>
-        }
-        else
-        {
-            <span>✅ Safe</span>
-        }
+       @if (isNotSafe)
+{
+    <span class="badge bg-danger">
+        ❌ Not Safe
+    </span>
+}
+else
+{
+    <span class="badge bg-success">
+        ✅ Safe
+    </span>
+}
     }
 </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+    <a asp-action="Details"
+       asp-route-id="@item.Id"
+       class="btn btn-sm btn-success">
+       Details
+    </a>
 
-             |   <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
+    <a asp-action="Edit"
+       asp-route-id="@item.Id"
+       class="btn btn-sm btn-warning">
+       Edit
+    </a>
+
+    <a asp-action="Delete"
+       asp-route-id="@item.Id"
+       class="btn btn-sm btn-danger">
+       Delete
+    </a>
+
+    <a asp-controller="Favorites"
+       asp-action="AddToFavorites"
+       asp-route-productId="@item.Id"
+       class="btn btn-sm btn-info">
+       ⭐ Favorite
+    </a>
+</td>
         </tr>
 }
     </tbody>

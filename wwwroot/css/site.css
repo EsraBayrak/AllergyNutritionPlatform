@@ -29,3 +29,78 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+
+body {
+    background: #f8fafc;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.navbar {
+    background: linear-gradient(90deg, #e8f5e9, #ffffff) !important;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: #2e7d32 !important;
+}
+
+.nav-link {
+    color: #374151 !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #2e7d32 !important;
+}
+
+h1, h2 {
+    color: #2e7d32;
+    font-weight: 700;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.table {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.table thead {
+    background-color: #2e7d32;
+    color: white;
+}
+
+.btn-primary,
+input[type="submit"] {
+    background-color: #2e7d32 !important;
+    border-color: #2e7d32 !important;
+    border-radius: 20px;
+    padding: 8px 20px;
+}
+
+.btn-primary:hover,
+input[type="submit"]:hover {
+    background-color: #1b5e20 !important;
+}
+
+a {
+    color: #2e7d32;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #1b5e20;
+}
+
+.form-control {
+    border-radius: 10px;
+}
+
+footer {
+    background: white;
+    padding: 15px 0;
+}

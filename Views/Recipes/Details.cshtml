@@ -1,0 +1,52 @@
+@model AllergyNutritionPlatform.Models.Recipe
+
+@{
+    ViewData["Title"] = "Recipe Details";
+}
+
+<h1>@Model.Name</h1>
+
+<hr />
+@if (!string.IsNullOrEmpty(Model.ImageUrl))
+{
+    <img src="@Model.ImageUrl"
+         class="img-fluid rounded mb-3"
+         style="max-width:400px;" />
+}
+
+<dl class="row">
+
+    <dt class="col-sm-3">
+        Category
+    </dt>
+    <dd class="col-sm-9">
+        @Model.Category
+    </dd>
+
+    <dt class="col-sm-3">
+        Suitable For
+    </dt>
+    <dd class="col-sm-9">
+        @Model.SuitableFor
+    </dd>
+
+    <dt class="col-sm-3">
+        Ingredients
+    </dt>
+    <dd class="col-sm-9">
+        @Model.Ingredients
+    </dd>
+
+    <dt class="col-sm-3">
+        Instructions
+    </dt>
+    <dd class="col-sm-9">
+        @Model.Instructions
+    </dd>
+
+</dl>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
