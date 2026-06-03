@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AllergyNutritionPlatform")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+75fad43b7927056b383fd4018866d4668b075721")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b1847258f8a0b56e285734196341fd121e3cb2a")]
 [assembly: System.Reflection.AssemblyProductAttribute("AllergyNutritionPlatform")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AllergyNutritionPlatform")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

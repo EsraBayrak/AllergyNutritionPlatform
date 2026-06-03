@@ -28,8 +28,19 @@
             </td>
             <td>
               
-@Html.ActionLink("Details", "Details", new { userId = item.UserId, allergyId = item.AllergyId }) |
-@Html.ActionLink("Delete", "Delete", new { userId = item.UserId, allergyId = item.AllergyId })
+<a asp-action="Details"
+   asp-route-userId="@item.UserId"
+   asp-route-allergyId="@item.AllergyId"
+   class="btn btn-success btn-sm">
+    Details
+</a>
+
+<a asp-action="Delete"
+   asp-route-userId="@item.UserId"
+   asp-route-allergyId="@item.AllergyId"
+   class="btn btn-danger btn-sm">
+    Delete
+</a>
             </td>
         </tr>
 }

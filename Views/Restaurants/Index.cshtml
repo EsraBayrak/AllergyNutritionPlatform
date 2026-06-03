@@ -46,18 +46,32 @@
                 @Html.DisplayFor(modelItem => item.Description)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.HasGlutenFreeOptions)
+               @(item.HasGlutenFreeOptions ? "✅ Yes" : "❌ No")
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.HasVeganOptions)
+               @(item.HasVeganOptions ? "✅ Yes" : "❌ No")
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Rating)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Details"
+   asp-route-id="@item.Id"
+   class="btn btn-success btn-sm">
+    Details
+</a>
+
+<a asp-action="Edit"
+   asp-route-id="@item.Id"
+   class="btn btn-warning btn-sm text-dark">
+    Edit
+</a>
+
+<a asp-action="Delete"
+   asp-route-id="@item.Id"
+   class="btn btn-danger btn-sm">
+    Delete
+</a>
             </td>
         </tr>
 }

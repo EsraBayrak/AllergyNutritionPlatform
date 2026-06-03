@@ -154,8 +154,7 @@ namespace AllergyNutritionPlatform.Controllers
     return NotFound();
 }
 
-if (product.IsSafe)
-{
+
         var exists = await _context.Favorites
             .AnyAsync(f => f.UserId == userId.Value && f.ProductId == productId);
         if (!exists)
@@ -167,7 +166,7 @@ if (product.IsSafe)
             });
 
             await _context.SaveChangesAsync();
-        }
+        
     }
 
     return RedirectToAction("Index", "Products");

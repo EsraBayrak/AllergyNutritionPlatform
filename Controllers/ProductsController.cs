@@ -56,7 +56,23 @@ if (!string.IsNullOrEmpty(searchString))
     ViewData["CurrentStatus"] = statusFilter;
 ViewBag.UserAllergyIds = userAllergyIds;
 ViewBag.IsLoggedIn = userId != null;
-    return View(await products.ToListAsync());
+var productList = await products.ToListAsync();
+
+if (statusFilter == "Safe")
+{
+    productList = productList
+        .Where(p => !p.ProductAllergies
+            .Any(pa => userAllergyIds.Contains(pa.AllergyId)))
+        .ToList();
+}
+else if (statusFilter == "NotSafe")
+{
+    productList = productList
+        .Where(p => p.ProductAllergies
+            .Any(pa => userAllergyIds.Contains(pa.AllergyId)))
+        .ToList();
+}
+    return View(productList);
 }
 
         // GET: Products/Details/5

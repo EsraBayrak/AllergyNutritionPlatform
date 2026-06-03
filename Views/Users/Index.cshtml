@@ -36,11 +36,25 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Password)
             </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
+           <td>
+    <a asp-action="Details"
+       asp-route-id="@item.Id"
+       class="btn btn-success btn-sm me-1">
+        Details
+    </a>
+
+    <a asp-action="Edit"
+       asp-route-id="@item.Id"
+       class="btn btn-warning btn-sm text-dark me-1">
+        Edit
+    </a>
+
+    <a asp-action="Delete"
+       asp-route-id="@item.Id"
+       class="btn btn-danger btn-sm">
+        Delete
+    </a>
+</td>
         </tr>
 }
     </tbody>
